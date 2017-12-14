@@ -19,8 +19,6 @@
     "buefy": "^0.6.1",
     "nuxt": "^1.0.0-rc11",
     "vue-chart": "^2.0.0",
-    // "vue-server-renderer": "^2.5.9",
-    // "vue-template-compiler": "^2.5.9",
     "vue2-filters": "^0.2.2"
   },
   "devDependencies": {
