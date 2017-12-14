@@ -10,13 +10,17 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@nuxtjs/axios": "^4.5.0",
     "@nuxtjs/font-awesome": "^1.0.3",
     "@nuxtjs/webpackmonitor": "^0.1.0",
     "buefy": "^0.6.1",
+    "vue": "^2.5.9",
+    "vue-server-renderer": "^2.5.9",
+    "vue-template-compiler": "^2.5.9",
     "nuxt": "^1.0.0-rc11",
     "vue-chart": "^2.0.0",
     "vue2-filters": "^0.2.2"
