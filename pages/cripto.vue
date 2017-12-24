@@ -1,9 +1,12 @@
 <template>
   <section>
     <b-collapse class="panel" :open.sync="isOpen">
-      <div slot="trigger" class="panel-heading">
-        <strong>Title</strong>
+      <div slot="trigger" class="has-text-right">
+        <b-icon :icon="isOpen ?
+          'caret-up' : 'caret-up'">
+        </b-icon>
       </div>
+      <br>
       <div class="">
         <div class="content columns is-multiline is-centered">
 
