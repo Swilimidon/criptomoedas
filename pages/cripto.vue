@@ -9,7 +9,6 @@
       <br>
       <div class="">
         <div class="content columns is-multiline is-centered">
-
           <div class="column" v-for="moeda in limitBy(dados, 4)" :key="moeda.symbol">
             <div class="box" style="background-color: #f3fff0">
               <article class="media">

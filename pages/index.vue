@@ -23,7 +23,7 @@
             <div class="column"></div>
             <div class="column is-6">
               <h3 class="title is-3 primary-span-home">
-                Keep track of the top 100 criptocurrencies.
+                Keep track of the top 100 cryptocurrencies.
               </h3>
               <nuxt-link class="button is-link is-large" to="/cripto" exact>Let's go!</nuxt-link>
             </div>
