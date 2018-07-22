@@ -1,12 +1,11 @@
 <template>
-  <div>
-    <section class="hero is-large">
+    <section class="hero is-fullheight">
       <div class="hero-head">
-        <header class="navbar has-shadow">
+        <header class="navbar is-transparent">
           <div class="container">
             <div class="navbar-brand">
               <a class="navbar-item" title="criptomoedas.io">
-                <img src="~/static/criptomoedas(1).png" alt="Criptomoedas">
+                <img src="@/static/criptomoedas(1).png" alt="Criptomoedas">
               </a>
             </div>
 
@@ -33,7 +32,6 @@
         </div>
       </div>
     </section>
-  </div>
 </template>
 
 <script>
@@ -43,7 +41,14 @@
 </script>
 <style>
   .hero-image {
-     background: url(../static/Forex.jpg) no-repeat center;
+     background: linear-gradient(
+      rgba(64, 201, 162, 0.2),
+      rgba(0, 0, 0, 0.5)
+    ), url(../static/Forex.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   .primary-span-home {
     padding: 0.5em;

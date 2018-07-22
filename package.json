@@ -18,11 +18,11 @@
     "@nuxtjs/font-awesome": "^1.0.3",
     "@nuxtjs/webpackmonitor": "^0.1.0",
     "buefy": "^0.6.1",
-    "nuxt": "^1.0.0-rc11",
+    "nuxt": "^1.4.1",
     "vue": "^2.5.9",
     "vue-chart": "^2.0.0",
     "vue-server-renderer": "^2.5.9",
-    "vue-template-compiler": "^2.5.9",
+    "vue-template-compiler": "^2.5.16",
     "vue2-filters": "^0.2.2"
   },
   "devDependencies": {
@@ -35,7 +35,7 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.9.2",
     "sass-loader": "^6.0.6"
   }
 }

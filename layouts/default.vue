@@ -4,7 +4,7 @@
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" title="criptomoedas.io">
-            <img src="~/static/criptomoedas(1).png" alt="Criptomoedas">
+            <img src="@/static/criptomoedas(1).png" alt="Criptomoedas">
           </a>
         </div>
         <div class="navbar-menu is-active">

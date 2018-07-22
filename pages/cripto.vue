@@ -10,7 +10,7 @@
       <div class="">
         <div class="content columns is-multiline is-centered">
 
-          <div class="column" v-for="moeda in limitBy(dados, 4)">
+          <div class="column" v-for="moeda in limitBy(dados, 4)" :key="moeda.symbol">
             <div class="box" style="background-color: #f3fff0">
               <article class="media">
                 <div class="media-content">
@@ -33,15 +33,13 @@
                     <p class="is-size-5 has-text-weight-light" v-if="moeda.percent_change_24h < 0">
                       {{ moeda.price_usd | currency }}
                       <span>
-                      <b-icon icon="caret-down" size="is-small">
-                      </b-icon>
+                      <b-icon icon="arrow-down" size="is-small"></b-icon>
                   </span>
                     </p>
                     <p class="is-size-5 has-text-weight-light" v-else>
                       {{ moeda.price_usd | currency }}
                       <span>
-                      <b-icon icon="caret-up" size="is-small">
-                      </b-icon>
+                      <b-icon icon="arrow-up" size="is-small"></b-icon>
                   </span>
                     </p>
                     <p class="is-size-7 has-text-weight-light">{{ moeda.price_usd }}</p>
@@ -183,7 +181,8 @@
         listaDeCoins: {},
         isEmpty: false,
         loading: false,
-        perPage: 10
+        perPage: 10,
+        isOpen: true
       }
     },
     async asyncData ({ app }) {
@@ -197,12 +196,13 @@
           }
         }
       }
+      console.clear()
+      console.log(data)
       return { dados: data }
     },
     methods: {
       async getData (currency) {
         if (!currency) currency = 'USD'
-        // let currency = 'BRL'
         this.loading = true
         let API_URI = 'https://api.coinmarketcap.com/v1/ticker/' + '?convert=' + currency
         // let CONVERT_API_URI = 'https://api.coinmarketcap.com/v1/ticker/?convert=' + currency + '&limit=10'
@@ -219,27 +219,6 @@
         this.dados = data
         this.loading = false
       },
-      //      async getCoinsList ({ app }) {
-      //        this.loading = true
-      //        let COINS_LIST_API_URI = 'https://min-api.cryptocompare.com/data/all/coinlist'
-      //        await app.$axios.$get(COINS_LIST_API_URI)
-      //          .then((resp) => {
-      //            this.listaDeCoins = resp.data.Data
-      //            window.localStorage.setItem('cryptocurrencies', JSON.stringify(resp.data.Data))
-      //          })
-      //          .catch((err) => {
-      //            if (err.response) {
-      //              console.log(err.response.data)
-      //              console.log(err.response.status)
-      //              console.log(err.response.headers)
-      //            } else if (err.request) {
-      //              console.log(err.request)
-      //            } else {
-      //              console.log('Error', err.message)
-      //            }
-      //          })
-      //        this.loading = false
-      //      },
       getCoinImage (symbol) {
         // return baseURL + this.listaDeCoins[symbol].imageURL
       }
@@ -247,7 +226,8 @@
     created: function () {
       setInterval(() => {
         this.getData()
-      }, 60000)
+        console.info('ok')
+      }, 30000)
     }
   }
 </script>
