@@ -25,9 +25,7 @@
       <div class="container">
         <div class="content has-text-centered">
           <p>
-            <strong>Criptomoedas</strong> by <a href="">Kainã Barros</a>. The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+            <strong>Criptomoedas</strong> by <a href="">Kainã Barros</a>. <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
           </p>
         </div>
       </div>
