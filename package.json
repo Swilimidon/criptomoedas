@@ -17,7 +17,7 @@
     "@nuxtjs/axios": "^4.5.0",
     "@nuxtjs/font-awesome": "^1.0.3",
     "@nuxtjs/webpackmonitor": "^0.1.0",
-    "buefy": "^0.6.1",
+    "buefy": "^0.8.15",
     "nuxt": "^1.4.1",
     "vue": "^2.5.9",
     "vue-chart": "^2.0.0",
